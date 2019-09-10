@@ -1,0 +1,4 @@
+keras
+jupyter
+matplotlib
+progress
