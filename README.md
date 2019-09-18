@@ -8,6 +8,7 @@ Here proposed a generative adversarial approach to address this challenging prob
 Moreover, the FCN is designed to incorporate an image-gradient-difference-based loss function to avoid generating blurry target images
 
 Evaluated this method on three datasets, to address the tasks of generating CT from MRI and generating 7T MRI from 3T MRI images.
+It is based over this paper : https://arxiv.org/abs/1806.07777
 
 # DATA SET
 BTW, you can download a real medical image synthesis dataset for reconstructing standard-dose PET from low-dose PET via this link: https://www.aapm.org/GrandChallenge/LowDoseCT/
