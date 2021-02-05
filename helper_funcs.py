@@ -81,7 +81,7 @@ def load_data(subfolder='', generator=False):
 
         # Define image array
         image_array = np.empty((len(image_list),) + (image_size) + (nr_of_channels,))
-        i = 0
+        image_array = np.array([])
         for image_name in image_list:
             # If file is image...
             if image_name[-1].lower() == 'g':  # to avoid e.g. thumbs.db files
@@ -98,8 +98,7 @@ def load_data(subfolder='', generator=False):
                 # image = image / 127.5 - 1
 
                 # Add image to array
-                image_array[i, :, :, :] = image
-                i += 1
+                np.append(image_array,image)
                 bar.next()
         bar.finish()
 
