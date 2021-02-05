@@ -129,9 +129,9 @@ def load_data(subfolder='', generator=False):
         nr_of_channels = im_test.shape[-1]
 
     trainA_images = create_image_array(trainA_image_names, trainA_path, image_size, nr_of_channels)
-    trainB_images = create_image_array(trainB_image_names, trainB_path, image_size, nr_of_channels)
+    trainB_images = create_image_array(trainB_image_names, trainB_path, image_size, 4)
     testA_images = create_image_array(testA_image_names, testA_path, image_size, nr_of_channels)
-    testB_images = create_image_array(testB_image_names, testB_path, image_size, nr_of_channels)
+    testB_images = create_image_array(testB_image_names, testB_path, image_size, 4)
 
     return {"image_size": image_size, "nr_of_channels": nr_of_channels,
             "trainA_images": trainA_images, "trainB_images": trainB_images,
